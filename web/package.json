@@ -1,0 +1,10 @@
+{
+  "name": "Web-Portal",
+  "version": "1.0.0",
+  "description": "Web-Portal for Photosoft",
+  "main": "index.js",
+  "repository": "https://github.com/tharun-vemula/photosoft",
+  "author": "Tharun Vemula",
+  "license": "MIT",
+  "private": false
+}
