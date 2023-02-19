@@ -1,7 +1,5 @@
 const crypto = require('node:crypto');
 const digits = '0123456789';
-const lowerCaseAlphabets = 'abcdefghijklmnopqrstuvwxyz';
-const upperCaseAlphabets = lowerCaseAlphabets.toUpperCase();
 
 exports.generate = () => {
   const length = +6;
@@ -12,10 +10,7 @@ exports.generate = () => {
     upperCaseAlphabets: true,
   };
 
-  const allowsChars =
-    ((generateOptions.digits || '') && digits) +
-    ((generateOptions.lowerCaseAlphabets || '') && lowerCaseAlphabets) +
-    ((generateOptions.upperCaseAlphabets || '') && upperCaseAlphabets);
+  const allowsChars = (generateOptions.digits || '') && digits;
 
   let password = '';
   while (password.length < length) {

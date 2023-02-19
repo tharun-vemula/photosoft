@@ -15,7 +15,7 @@ const studentSchema = Schema(
 
     section: {
       type: String,
-      required: true,
+      default: '-',
     },
 
     fatherName: {
@@ -28,6 +28,10 @@ const studentSchema = Schema(
       required: true,
     },
 
+    address: {
+      type: String,
+      required: true,
+    },
     aadhaar: {
       type: String,
       required: true,
