@@ -28,16 +28,10 @@ const studentSchema = Schema(
       required: true,
     },
 
-    address: {
+    aadhaar: {
       type: String,
       required: true,
     },
-
-    photoUrl: {
-      type: String,
-      required: true,
-    },
-
     id: {
       type: String,
       required: true,

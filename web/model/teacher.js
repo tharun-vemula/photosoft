@@ -1,19 +1,19 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const schoolSchema = Schema(
+const teacherSchema = Schema(
   {
     name: {
       type: String,
       required: true,
     },
 
-    address: {
+    designation: {
       type: String,
       required: true,
     },
 
-    village: {
+    employeeId: {
       type: String,
       required: true,
     },
@@ -23,28 +23,21 @@ const schoolSchema = Schema(
       required: true,
     },
 
-    mandal: {
+    school: {
       type: String,
       required: true,
     },
 
-    district: {
+    address: {
       type: String,
       required: true,
     },
-
-    state: {
+    bloodGroup: {
       type: String,
       required: true,
-      default: 'Andhra Pradesh',
     },
 
     id: {
-      type: String,
-      required: true,
-    },
-
-    password: {
       type: String,
       required: true,
     },
@@ -52,4 +45,4 @@ const schoolSchema = Schema(
   { timestamps: true },
 );
 
-module.exports = mongoose.model('School', schoolSchema);
+module.exports = mongoose.model('Teacher', teacherSchema);
